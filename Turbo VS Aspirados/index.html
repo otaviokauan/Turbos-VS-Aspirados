@@ -8,16 +8,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            background-color: #FF5722;
             color: #ffffff;
             margin: 0;
             padding: 0;
         }
         header {
             background-color: #FF5722;
-            color: #fafafa;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
+            position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+        }
+        header img {
+            position: absolute; /* Posiciona a imagem de forma absoluta dentro do header */
+            top: 50px; /* Distância do topo */
+            left: 30px; /* Distância da esquerda */
+            height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
         }
         nav {
             margin: 20px;
@@ -31,14 +38,14 @@
         section {
             margin: 20px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #F0F8FF; /* Alterado para melhor visibilidade do texto */
             border-radius: 8px;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #ffffff;
-            color: #ffffff;
+            color: #000000; /* Alterado para preto para melhor visibilidade */
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -48,6 +55,7 @@
 <body>
 
     <header>
+        <img src="turbocabecalho.png" alt="Logo Turbo">
         <h1>Carros Turbo e Aspirados</h1>
         <p>Entenda as diferenças e características dos motores turbo e aspirados.</p>
     </header>
@@ -61,7 +69,7 @@
     <section id="turbo">
         <h2>Carros Turbo</h2>
         <p>Os carros turbo utilizam turbocompressores para aumentar a potência do motor. O turbocompressor força mais ar para dentro da câmara de combustão, permitindo que mais combustível seja queimado, o que resulta em mais potência.</p>
-        <img src="turbo.jpg" />
+        <img src="turbo.jpg" alt="Carro Turbo">
         <p><strong>Vantagens:</strong></p>
         <ul>
             <li>Maior potência em motores menores</li>
@@ -79,7 +87,7 @@
     <section id="aspirado">
         <h2>Carros Aspirados</h2>
         <p>Os carros aspirados, também conhecidos como motores naturalmente aspirados, não utilizam turbocompressores. Eles dependem da pressão atmosférica para encher a câmara de combustão com ar.</p>
-        <img src="aspirado.jpg" />
+        <img src="aspirado.jpg" alt="Carro Aspirado">
         <p><strong>Vantagens:</strong></p>
         <ul>
             <li>Menor custo de manutenção</li>
@@ -96,10 +104,13 @@
 
     <section id="conclusao">
         <h2>Conclusão</h2>
-        <img src="conclusao.png" />
-        <p>Escolher entre um carro turbo ou aspirado depende das suas necessidades e preferências. Se você busca desempenho e eficiência, um carro turbo pode ser a melhor escolha.
-             Por outro lado, se você prefere simplicidade e menor custo de manutenção, um carro aspirado pode ser mais adequado.</p>
+        <img src="conclusao.png" alt="Conclusão">
+        <p>Escolher entre um carro turbo ou aspirado depende das suas necessidades e preferências. Se você busca desempenho e eficiência, um carro turbo pode ser a melhor escolha. Por outro lado, se você prefere simplicidade e menor custo de manutenção, um carro aspirado pode ser mais adequado.</p>
     </section>
+
+    <footer>
+        <p>&copy; 2023 Carros Turbo e Aspirados. Todos os direitos reservados.</p>
+    </footer>
     
 </body>
 </html>
